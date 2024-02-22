@@ -175,24 +175,24 @@ public class Home extends AppCompatActivity {
 
         if(toggleState.getString("toggleState","").equals("true")) {
             toggleBoolean=true;
-            toggle.setImageResource(R.drawable.toggle_on);
+            toggle.setImageResource(R.drawable.on);
         }
         else {
             toggleBoolean=false;
-            toggle.setImageResource(R.drawable.toggle_off);
+            toggle.setImageResource(R.drawable.off);
         }
 
         toggle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(toggleBoolean){
-                    toggle.setImageResource(R.drawable.toggle_off);
+                    toggle.setImageResource(R.drawable.off);
                     toggleBoolean=false;
                     toggleState.edit().putString("toggleState", "false").commit();
                     stopService(view);
                 }
                 else {
-                    toggle.setImageResource(R.drawable.toggle_on);
+                    toggle.setImageResource(R.drawable.on);
                     toggleBoolean=true;
                     toggleState.edit().putString("toggleState", "true").commit();
                     startService(view);

@@ -41,23 +41,127 @@
             android:background="@drawable/top_round_bg"
             android:layout_weight="1"
             android:padding="8dp">
-
-            <LinearLayout
+            <ScrollView
+                android:id="@+id/vscroll1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="8dp">
-
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:padding="8dp"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:text="Information and guidelines to be added here..."/>
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:text="How to Register:"/>
 
-            </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:text="1. Install the app.\n\n2. Follow on-screen instructions,\n\n3. Complete all required details.\n\n4. Select ‘yes‘ if you have insurance.\n\n5. Select ‘yes’ if you agree to donate your organs in case of death.\n\n6. Enter 3 Emergency contact numbers (later editable).\n\n7. Enter your email address, and set a password to it.\n\n8. Verify your email address and login.\n\n9. Grant necessary permissions. And we are done.\n"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:text="Precautions Before Initiating SOS:"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:text="&gt;&gt; If in distress, follow these steps:"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:text="1. Upon successful registration, find a prominent red SOS button on the home screen.\n\n2. Press the button to send an SOS signal to your emergency contacts.\n"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:text="How to Use Map Services:"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:text="1. Locate the map button on the home screen footer.\n\n2. In emergencies, navigate to the map section to find the nearest police station or hospital.\n\n3. Click on the pointer for the fastest route to the selected destination.\n"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:text="How to Update Emergency Contact Details:"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:text="1. Access the profile screen from the menu.\n\n2. Make necessary changes to existing emergency contacts.\n\n3. Tap 'Save' to store the updated information.\n"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:text="NOTE: Click on the check box if interested in Volunteering.\n"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout

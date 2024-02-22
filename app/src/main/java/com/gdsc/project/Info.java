@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,6 +15,7 @@ public class Info extends AppCompatActivity {
     private LinearLayout linears;
     private LinearLayout linear7;
     private LinearLayout linear8;
+    private ScrollView vscroll1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,11 +26,14 @@ public class Info extends AppCompatActivity {
         linear8 = findViewById(R.id.linear8);
         linearx = findViewById(R.id.linearx);
         linears = findViewById(R.id.linears);
+        vscroll1 = findViewById(R.id.vscroll1);
 
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         getWindow().setStatusBarColor(0xFFE7EEFB);
         Window window = this.getWindow();
         window.setNavigationBarColor(Color.parseColor("#E23744"));
+
+        vscroll1.setVerticalScrollBarEnabled(false);
 
         linear8.setOnClickListener(v -> {
             Intent n = new Intent(this,Profile.class);

@@ -35,9 +35,8 @@
             android:id="@+id/toggle"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:padding="8dp"
             android:layout_marginLeft="4dp"
-            android:src="@drawable/toggle_on"
+            android:src="@drawable/on"
             android:scaleType="fitCenter"/>
     </LinearLayout>
 
