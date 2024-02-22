@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -50,6 +51,7 @@ public class Profile extends AppCompatActivity {
     private LinearLayout address;
     private LinearLayout ec;
     private Button logout;
+    private ImageView avatar;
     private TextView name;
     private TextView age;
     private TextView gender;
@@ -84,6 +86,7 @@ public class Profile extends AppCompatActivity {
         linearx = findViewById(R.id.linearx);
         linears = findViewById(R.id.linears);
         updatecontacts = findViewById(R.id.updatecontacts);
+        avatar = findViewById(R.id.avatar);
         logout = findViewById(R.id.logout);
         vscroll1 = findViewById(R.id.vscroll1);
         chbx = findViewById(R.id.chbx);
@@ -132,6 +135,18 @@ public class Profile extends AppCompatActivity {
         }
         else {
             checkbox.setChecked(false);
+        }
+
+        if(userdata.getString("gender", "").equals("Male")){
+            avatar.setImageResource(R.drawable.male);
+        }
+        else {
+            if(userdata.getString("gender", "").equals("Female")){
+                avatar.setImageResource(R.drawable.female);
+            }
+            else {
+                avatar.setImageResource(R.drawable.pic1);
+            }
         }
         c1.setText("Contact 1: "+sharedPreferences.getString(phoneNumber1,""));
         c2.setText("Contact 2: "+sharedPreferences.getString(phoneNumber2,""));
