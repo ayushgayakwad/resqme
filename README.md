@@ -1,3 +1,4 @@
 # ResQMe
 
-An Android app project developed for Google DSC Solution Challenge.
+An Android app project developed for Google Developer Solution Challenge.
+
